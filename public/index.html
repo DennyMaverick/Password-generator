@@ -14,7 +14,57 @@
 </head>
 
 <body>
-
+    <main>
+        <section class="password-generator">
+            <div class="password-generator__inner">
+                <div class="container">
+                    <h1 class="password-generator__title">Генератор паролей</h1>
+                    <div class="password-generator__input input">
+                        <div class="password-generator__items">
+                            <div class="input__item password-item">
+                                <h2 class="password-item__title password-item__characters-title">
+                                    выберете количество символов:
+                                </h2>
+                                <ul class="password-item__list">
+                                    <li class="password-item__list-item">8 символов</li>
+                                    <li class="password-item__list-item">12 символов</li>
+                                    <li class="password-item__list-item">15 символов</li>
+                                </ul>
+                            </div>
+                            <div class="input__item password-item__cyrilic-digits password-item">
+                                <label class="password-item__label password-item__label-in-cyrilic" for="cyrilic-digits">
+                                    <h2 class="password-item__title">кириллица + цифры</h2>
+                                </label>
+                                <input class="password-item__default-checkbox password-item__default-checkbox-cyrilic-digits" id="cyrilic-digits" type="checkbox" />
+                                <div class="custom-checkbox password-item__custom-checkbox password-item__custom-checkbox-in-cyrilic"></div>
+                            </div>
+                            <div class="input__item input__password-default password-item">
+                                <label class="password-item__label label--default" for="default">
+                                    <h2 class="password-item__title password-item__default-title">
+                                        сбросить по умолчанию
+                                    </h2>
+                                </label>
+                                <input class="password-item__default-checkbox" id="default" type="checkbox" checked />
+                                <div class="custom-checkbox password-item__custom-checkbox"></div>
+                            </div>
+                        </div>
+                        <button class="password-generator__btn">Сгенерировать</button>
+                    </div>
+                    <div class="password-generator__output"></div>
+                </div>
+                <div class="password-generator__passwords">
+                    <h2 class="password-generator__subtitle">
+                        Пароли:
+                    </h2>
+                    <input class="password-generator__password password-generator__pass-item" type="text">
+                    <input class="password-generator__password password-generator__pass-item" type="text">
+                    <input class="password-generator__password password-generator__pass-item" type="text">
+                    <input class="password-generator__password password-generator__pass-item" type="text">
+                    <input class="password-generator__password password-generator__pass-item" type="text">
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- * jQuery -->
     <!-- <script src="./js/libs/jquery/jquery.js"></script> -->
     <!-- * js libs -->
