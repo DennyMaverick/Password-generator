@@ -26,26 +26,33 @@
                                     выберете количество символов:
                                 </h2>
                                 <ul class="password-item__list">
-                                    <li class="password-item__list-item">8 символов</li>
-                                    <li class="password-item__list-item">12 символов</li>
-                                    <li class="password-item__list-item">15 символов</li>
+                                    <li class="password-item__list-item" data-char="eight">8 символов</li>
+                                    <li class="password-item__list-item" data-char="twelve">12 символов</li>
+                                    <li class="password-item__list-item" data-char="fifteen">15 символов</li>
                                 </ul>
                             </div>
                             <div class="input__item password-item__cyrilic-digits password-item">
                                 <label class="password-item__label password-item__label-in-cyrilic" for="cyrilic-digits">
                                     <h2 class="password-item__title">кириллица + цифры</h2>
                                 </label>
-                                <input class="password-item__default-checkbox password-item__default-checkbox-cyrilic-digits" id="cyrilic-digits" type="checkbox" />
-                                <div class="custom-checkbox password-item__custom-checkbox password-item__custom-checkbox-in-cyrilic"></div>
+                                <input class="password-item__default-checkbox password-item__default-checkbox--cyrilic-digits" id="cyrilic-digits" type="checkbox" />
+                                <div class="custom-checkbox--in-cyrilic password-item__custom-checkbox password-item__custom-checkbox--in-cyrilic"></div>
                             </div>
-                            <div class="input__item input__password-default password-item">
+                            <div class="input__item password-item__specials password-item">
+                                <label class="password-item__label password-item__label-special" for="special">
+                                    <h2 class="password-item__title">специальные символы</h2>
+                                </label>
+                                <input class="password-item__default-checkbox password-item__default-checkbox--specials" id="special" type="checkbox" />
+                                <div class="custom-checkbox--specials password-item__custom-checkbox password-item__custom-checkbox--specials"></div>
+                            </div>
+                            <div class="input__item password-item__default input__password-default password-item">
                                 <label class="password-item__label label--default" for="default">
                                     <h2 class="password-item__title password-item__default-title">
                                         сбросить по умолчанию
                                     </h2>
                                 </label>
-                                <input class="password-item__default-checkbox" id="default" type="checkbox" checked />
-                                <div class="custom-checkbox password-item__custom-checkbox"></div>
+                                <input class="password-item__default-checkbox password-item__default-checkbox--default" id="default" type="checkbox" checked />
+                                <div class="custom-checkbox--default password-item__custom-checkbox password-item__custom-checkbox--default"></div>
                             </div>
                         </div>
                         <button class="password-generator__btn">Сгенерировать</button>
@@ -53,14 +60,12 @@
                     <div class="password-generator__output"></div>
                 </div>
                 <div class="password-generator__passwords">
-                    <h2 class="password-generator__subtitle">
-                        Пароли:
-                    </h2>
-                    <input class="password-generator__password password-generator__pass-item" type="text">
-                    <input class="password-generator__password password-generator__pass-item" type="text">
-                    <input class="password-generator__password password-generator__pass-item" type="text">
-                    <input class="password-generator__password password-generator__pass-item" type="text">
-                    <input class="password-generator__password password-generator__pass-item" type="text">
+                    <h2 class="password-generator__subtitle">Пароли:</h2>
+                    <input class="password-generator__password password-generator__pass-item" type="text" />
+                    <input class="password-generator__password password-generator__pass-item" type="text" />
+                    <input class="password-generator__password password-generator__pass-item" type="text" />
+                    <input class="password-generator__password password-generator__pass-item" type="text" />
+                    <input class="password-generator__password password-generator__pass-item" type="text" />
                 </div>
             </div>
         </section>

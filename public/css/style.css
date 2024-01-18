@@ -209,15 +209,6 @@ a:focus {
   margin-bottom: 3rem;
 }
 
-.input__password-default {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .password-item {
   position: relative;
 }
@@ -234,7 +225,9 @@ a:focus {
   margin-bottom: 2rem;
 }
 
-.password-item__custom-checkbox {
+.password-item__custom-checkbox--default,
+.password-item__custom-checkbox--in-cyrilic,
+.password-item__custom-checkbox--specials {
   cursor: pointer;
   position: relative;
   width: 15px;
@@ -243,7 +236,9 @@ a:focus {
   border: 2px solid #b85c73;
 }
 
-.password-item__custom-checkbox::before {
+.password-item__custom-checkbox--default::before,
+.password-item__custom-checkbox--in-cyrilic::before,
+.password-item__custom-checkbox--specials::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -267,7 +262,19 @@ a:focus {
   width: 0;
 }
 
-.password-item__default-checkbox:checked+.custom-checkbox::before {
+.password-item__default-checkbox--default:checked+.custom-checkbox--default::before {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.password-item__default-checkbox--cyrilic-digits:checked+.custom-checkbox--in-cyrilic::before {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.password-item__default-checkbox--specials:checked+.custom-checkbox--specials::before {
   -webkit-transform: translate(-50%, -50%) scale(1);
   -ms-transform: translate(-50%, -50%) scale(1);
   transform: translate(-50%, -50%) scale(1);
@@ -300,7 +307,9 @@ a:focus {
   color: #ff8c00;
 }
 
-.password-item__cyrilic-digits {
+.password-item__cyrilic-digits,
+.password-item__specials,
+.password-item__default {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
