@@ -12,8 +12,14 @@ copyElems.forEach(function (item) {
     const currentInput = currentPasswordItem.querySelector(
       '.password-generator__password'
     );
-
-    navigator.clipboard.writeText(currentInput.value);
+      async function copyPassword() {
+        try {
+          await navigator.clipboard.writeText(currentInput.value);
+        } catch (err) {
+          console.error('Ошибка копирования в буфер: ', err);
+        }
+      }
+      copyPassword();
 
     if (currentInput.value) {
       const currentCopyPopup = currentPasswordItem.querySelector(

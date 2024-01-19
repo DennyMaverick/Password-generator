@@ -476,10 +476,6 @@ a:focus {
     flex-direction: column;
   }
 
-  .password-generator__copy {
-    display: none;
-  }
-
   .password-generator__btn {
     margin-bottom: 2rem;
   }
