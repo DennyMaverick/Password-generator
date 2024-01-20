@@ -400,6 +400,12 @@ a:focus {
   transition: .3s ease-in background-color,.3s ease-in color,.3s ease-in border;
 }
 
+.password-item__list-item:hover {
+  background-color: #2b2b2b;
+  border: 1px solid #fff;
+  color: #df6565;
+}
+
 .password-item__list-item--active {
   background-color: #2b2b2b;
   border: 1px solid #fff;
