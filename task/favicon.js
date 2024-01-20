@@ -7,8 +7,8 @@ const app = require("../config/app.js");
 // Плагины
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
-const favicons = require('gulp-favicons');
-const filter = require('gulp-filter');
+// const favicons = require('gulp-favicons');
+// const filter = require('gulp-filter');
 
 
 // Favicon
@@ -21,10 +21,6 @@ const favicon = () => {
       }))
     }))
     .pipe(dest(path.favicon.dest))
-    .pipe(favicons(app.favicons))
-    .pipe(dest(path.favicon.dest))
-    .pipe(filter(['favicon.ico', 'apple-touch-icon.png', 'manifest.json']))
-    .pipe(dest(path.root));
 }
 
 module.exports = favicon;

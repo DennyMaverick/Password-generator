@@ -25,23 +25,4 @@ module.exports = {
     importer: require('node-sass-tilde-importer'),
     outputStyle: 'compressed',
   },
-
-  favicons: {
-    appName: 'Password - generator',
-    appShortName: 'Password - generator',
-    appDescription: '',
-    developerName: 'Denny Maverick',
-    background: '#fff',
-    path: 'img/favicon/',
-    icons: {
-      favicons: true,
-      appleIcon: true,
-      android: true,
-      windows: false,
-      yandex: false,
-      coast: false,
-      firefox: false,
-      appleStartup: false,
-    },
-  },
 };
